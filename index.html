@@ -183,16 +183,16 @@
 			     if(e.originalEvent.detail > 0) {
 			         //scroll down
 			         arahBawah = true;
-			         console.log(parseInt($(window)[0].scrollY) % sH);
-			         console.log('height: ' + sH);
-			         console.log(batasBawah);
+			   //       console.log(parseInt($(window)[0].scrollY) % sH);
+			   //       console.log('height: ' + sH);
+			   //       console.log(batasBawah);
 
-			         if((parseInt($(window)[0].scrollY) % sH) > batasBawah){
-						$('html, body').animate({
-					        scrollTop: $('#_s_' + (parseInt(parseInt($(window)[0].scrollY) / sH) + 1 + 1)).offset().top
-					    }, 250);
-			         }
-			         console.log('bawah');
+			   //       if((parseInt($(window)[0].scrollY) % sH) > batasBawah){
+						// $('html, body').animate({
+					 //        scrollTop: $('#_s_' + (parseInt(parseInt($(window)[0].scrollY) / sH) + 1 + 1)).offset().top
+					 //    }, 250);
+			   //       }
+			   //       console.log('bawah');
 			     }else {
 			         //scroll up
 			         arahBawah = false;
@@ -213,12 +213,12 @@
 			     if(e.originalEvent.wheelDelta < 0) {
 			         //scroll down
 			         arahBawah = true;
-			         if(($(window)[0].scrollY % sH) > batasBawah){
-						$('html, body').animate({
-					        scrollTop: $('#_s_' + (parseInt(temp1 / sH) + 1 + 1)).offset().top
-					    }, 500);
-			         }
-			         console.log('bawah');
+			   //       if(($(window)[0].scrollY % sH) > batasBawah){
+						// $('html, body').animate({
+					 //        scrollTop: $('#_s_' + (parseInt(temp1 / sH) + 1 + 1)).offset().top
+					 //    }, 500);
+			   //       }
+			   //       console.log('bawah');
 			     }else {
 			         //scroll up
 			         arahBawah = false;
