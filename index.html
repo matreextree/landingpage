@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: arial;
+		}
+		._section{
+			height: 100vh;
+			width: 100%;
+		}
+		._header{
+			height: 20%;
+			width: 100%;
+			background-color: #FFF;
+		}
+
+		._header .ico{
+			width: 3%;
+			padding: 0.4%;
+		}
+
+		._header .ico_text{
+			font-size: 1.7vw;
+			font-weight: bold;
+			position: relative;
+			margin-left: 2.5%;
+			margin-top: -2.1%;
+		}
+
+		._header .ico_hr{
+			position: relative;
+			width: 13%;
+			margin-left: 2.4%;
+			margin-top: -0.7%;
+		}
+
+		._header .ico_desc{
+			font-size: 0.75vw;
+			position: relative;
+			margin-left: 2.55%;
+			margin-top: -0.5%;
+		}
+
+		._header .ico_title{
+			font-size: 1.5vw;
+			position: relative;
+			width: 100%;
+			text-align: center;
+			margin-top: -2.2%;
+		}
+
+		._body{
+			height: 80%;
+			width: 100%;
+			background-color: #110529;
+		}
+	</style>
+	<div class="_section" id="_s_1">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Value Proposition</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_2">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Product Features</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_3">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Market Segments</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_4">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Competitors & Market Size</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_5">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Key Partners</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_6">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Management Consultant Business Process</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_7">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Milestone</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_8">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Our Team</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<div class="_section" id="_s_9">
+		<div class="_header">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Our Office</div>
+		</div>
+		<div class="_body">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var sH = $(window)[0].innerHeight;
+			var batasBawah = sH / 40;
+			var batasAtas = 10 * sH / 11;
+			var temp0, temp1 = 0;
+			var arahBawah = true;
+
+			 //Firefox
+			 $(window).bind('DOMMouseScroll', function(e){
+			     if(e.originalEvent.detail > 0) {
+			         //scroll down
+			         arahBawah = true;
+			         console.log(parseInt($(window)[0].scrollY) % sH);
+			         console.log('height: ' + sH);
+			         console.log(batasBawah);
+
+			         if((parseInt($(window)[0].scrollY) % sH) > batasBawah){
+						$('html, body').animate({
+					        scrollTop: $('#_s_' + (parseInt(parseInt($(window)[0].scrollY) / sH) + 1 + 1)).offset().top
+					    }, 250);
+			         }
+			         console.log('bawah');
+			     }else {
+			         //scroll up
+			         arahBawah = false;
+			         if((parseInt($(window)[0].scrollY) % sH) != 0 && (parseInt($(window)[0].scrollY) % sH) < batasAtas){
+						$('html, body').animate({
+					        scrollTop: $('#_s_' + (parseInt(parseInt($(window)[0].scrollY) / sH) + 1)).offset().top
+					    }, 250);
+			         }
+			         console.log('atas');
+			     }
+
+			     //prevent page fom scrolling
+			     // return false;
+			 });
+
+			 //IE, Opera, Safari
+			 $(window).bind('mousewheel', function(e){
+			     if(e.originalEvent.wheelDelta < 0) {
+			         //scroll down
+			         arahBawah = true;
+			         if(($(window)[0].scrollY % sH) > batasBawah){
+						$('html, body').animate({
+					        scrollTop: $('#_s_' + (parseInt(temp1 / sH) + 1 + 1)).offset().top
+					    }, 500);
+			         }
+			         console.log('bawah');
+			     }else {
+			         //scroll up
+			         arahBawah = false;
+			         if((parseInt($(window)[0].scrollY) % sH) != 0 && (parseInt($(window)[0].scrollY) % sH) < batasAtas){
+						$('html, body').animate({
+					        scrollTop: $('#_s_' + (parseInt(parseInt($(window)[0].scrollY) / sH))).offset().top
+					    }, 250);
+			         }
+			         console.log('atas');
+			     }
+
+			     //prevent page fom scrolling
+			     // return false;
+			 });
+		});
+	</script>
+</body>
+</html>
