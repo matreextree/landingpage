@@ -204,11 +204,15 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
+		$(document).ready(function(){			
 			var position = 1;
 			var canScroll = true;
 			var delay = 500, spaceDelay = 250;
 
+			$('html, body').animate({
+			        scrollTop: $('#_s_1').offset().top
+		    	}, delay);
+			
 			function nextPage(){
 		        //scroll down
 		        if(position == 9 || !canScroll)
