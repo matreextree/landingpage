@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<!-- <meta charset="utf-8"> -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="chrome=1"> -->
+	<title>Bootstrap - Lightbox</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-lightbox.min.css"><!-- 
+	<link rel="stylesheet" href="prettify/prettify.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-lightbox.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+	.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
+	</style>
+	<script>
+	$('.thumbnail').click(function(){
+  	$('.modal-body').empty();
+  	var title = $(this).parent('a').attr("title");
+  	$('.modal-title').html(title);
+  	$($(this).parents('div').html()).appendTo('.modal-body');
+  	$('#myModal').modal({show:true});
+});
+	</script>
+</head>
+<!-- <body data-spy="scroll" data-target="#navbar"> -->
+<body>
+
+
+	
+		<div class="container">
+  <div class="row">
+    <h1>Bootstrap 3 Lightbox using Modal</h1>
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 1"><img src="//placehold.it/600x350" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 2"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 3"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 4"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 5"><img src="//placehold.it/600x350/2255EE" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 6"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 8"><img src="//placehold.it/600x350/777" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 9"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 10"><img src="//placehold.it/600x350/EEE" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 11"><img src="//placehold.it/600x350/449955/FFF" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 12"><img src="//placehold.it/600x350/DDD" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6"><a href="#" title="Image 13"><img src="//placehold.it/600x350/992233" class="thumbnail img-responsive"></a></div>
+    </div>
+    <hr>
+    <a href="http://bootply.com/71401">Edit on Bootply</a>
+    <hr>
+  </div>
+</div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+		<h3 class="modal-title">Heading</h3>
+	</div>
+	<div class="modal-body">
+		
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+   </div>
+  </div>
+</div>
+
+	
+</body>
+</html>

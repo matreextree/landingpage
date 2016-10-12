@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Key Partners</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+$(function () {
+
+    $('#highChart').highcharts({
+
+        chart: {
+        	backgroundColor: '#222a35',
+            type: 'columnrange',
+            inverted: true
+        },
+
+        title: {
+        	style:{
+        		color: '#ffffff'	
+        	},
+            text: 'AVG. HOURLY RATES FOR MGMT CONSULTANTS BY LEVEL'
+        },
+
+        subtitle: {
+        	style:{
+        		color: '#ffffff'	
+        	},
+            text: 'Source: Consultancy.uk Analysis, based on data from Gartner'
+        },
+
+        xAxis: {
+        	labels: {
+        		style: {
+            		color: 'white'
+        		}
+    		},
+            categories: ['Partner', 'Manager', 'Post-MBA-Consultant', 'Pre-MBA Consultant']
+        },
+
+        yAxis: {
+        	labels: {
+        		style: {
+            		color: 'white'
+        		}
+    		},
+            title: {
+          		style: {
+            		color: 'white'
+        		},
+                text: 'US $'
+            }
+        },
+
+        tooltip: {
+            valuePrefix: 'US $ '
+        },
+
+        plotOptions: {
+            columnrange: {
+                dataLabels: {
+                    enabled: true,
+                    formatter: function () {
+                        return 'US$ '+this.y;
+                    }
+                }
+            }
+        },
+
+        legend: {
+            enabled: false
+        },
+
+        series: [{
+            name: 'Salary',
+            color: '#ed7d31',
+            data: [
+                [800, 1200],
+                [600, 900],
+                [400, 600],
+                [250, 400]
+            ]
+        }]
+
+    });
+
+});
+		</script>
+</head>
+<body>
+	<div class="container">
+		<div class="conHeader">
+			<div class="logoContainer">
+				<img src="assets/logo.png">
+			</div>
+		</div>
+		<div class="conBody">
+			<div class="itemBody">
+				<img src="assets/orang.png">
+			</div>
+			<div class="itemBody">
+				<div id="highChart"></div>
+			</div>
+		</div>
+		
+		<div id="articleFooter1">
+			<center>Consultant Engagement</center>
+			<p>We are using the same consulting business process, however, what separate us from the traditional consulting services is in the integrated methodology build in our systems that enabled the client to assess and perform <span class="boldBlue">90 percents</span> of consulting work themselves.</p>
+			<p>Whereas the remaining <span class="boldBlue">10 percents</span> of work will be perform by our independent consultant.</p>
+			<p>Depending on the clients needs, the type of independent consultant that will engage with client are :</p>
+		</div>
+		<div id="articleFooter2">
+			<div class="itemArticle2">
+				<div class="headerItemArticle2">
+					<center>Strategy Consultant</center>
+				</div>
+				<div class="bodyItemArticle2">
+					<p>Corporate Strategy</p>
+					<p>Public Sector Strategy</p>
+					<p>Mergers &amp Acquisitions</p>
+					<p>Organizational Strategy</p>
+					<p>Functional Strategy.</p>
+				</div>
+			</div>
+			<div class="itemArticle2">
+				<div class="headerItemArticle2">
+					<center>Operations Consultant</center>
+				</div>
+				<div class="bodyItemArticle2">
+					<p>Sales &amp Marketing</p>
+					<p>Process Management</p>
+					<p>Supply Chain Management</p>
+					<p>Procurement</p>
+					<p>Finance &amp Outsourcing</p>
+				</div>
+			</div>
+			<div class="itemArticle2">
+				<div class="headerItemArticle2">
+					<center>OD&ampHR Consultant</center>
+				</div>
+				<div class="bodyItemArticle2">
+					<p>Organizational Change</p>
+					<p>Talent Management</p>
+					<p>HR Function</p>
+					<p>Benefits &amp Rewards</p>
+					<p>Learning &amp Development</p>
+				</div>
+			</div>
+			<div class="itemArticle2">
+				<div class="headerItemArticle2">
+					<center>Financial Advisory</center>
+				</div>
+				<div class="bodyItemArticle2">
+					<p>Corporate Finance</p>
+					<p>Risk Management</p>
+					<p>Transaction Services</p>
+					<p>Restructuring</p>
+					<p>Real Estate Advisory</p>
+					<p>Forensics &amp Litigation</p>
+				</div>
+			</div>
+			<div class="itemArticle2">
+				<div class="headerItemArticle2">
+					<center>IT Consultant</center>
+				</div>
+				<div class="bodyItemArticle2">
+					<p>IT Advisory</p>
+					<p>ERP Services </p>
+					<p>Data Analytics</p>
+					<p>Software Management</p>
+					<p>Systems Integration</p>
+					<p>Enterprise Architecture</p>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+</body>
+</html>
