@@ -14,6 +14,10 @@ body{
 }
 
 ._header{
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	position: fixed;
 	height: 15%;
 	width: 100%;
 	background-color: #FFF;
@@ -55,6 +59,11 @@ body{
 	width: 100%;
 	text-align: center;
 	margin-top: -2.2%;
+}
+
+._fake{
+	height: 15%;
+	background-color: #110529;
 }
 
 ._body{
