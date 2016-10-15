@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>matreex.co</title>
+	<link href="img/icon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="modalku" id="modalku" hidden>
+		<div class="isi">
+			<div class="close" id="modal_close">
+				X
+			</div>
+			<div class="judul" id="modal_judul">
+				Market Segment
+			</div>
+			<div class="data" id="modal_data">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="navigator">
+		<div id="up" class="navb"></div>
+		<div id="down" class="navb"></div>
+	</div>
+	<div class="_header" hidden>
+		<div><img class="ico" src="img/icon.png"></div>
+		<div class="ico_text"><a href="index.html">matreex.co</a></div>
+		<div id="the_title" class="ico_title">Value Proposition</div>
+	</div>
+	<div id="_side_nav" hidden>
+		<div id="_ruler"></div>
+		<div id="_buble" class="_with_animation"></div>
+	</div>
+	<div class="_section _section_special" id="_s_1">
+			<!-- 
+		<div class="_header1">
+			<div><img class="ico" src="img/icon.png"></div>
+			<div class="ico_text">matreex.co</div>
+			<div class="ico_hr"><hr /></div>
+			<div class="ico_desc">Automation & Integration of<br/>Management Consulting Services</div>
+			<div class="ico_title">Value</div>
+		</div>
+			 -->
+		<div class="_body">
+			<!--<iframe align="center" frameborder="no" height="650px" scrolling="auto" src="https://riochr17.github.io/graph-mat/" width="100%" style="margin-top:-10%;"></iframe>-->
+			<img src="img/matreex_team1.jpg" class="img-responsive" alt="" height="100%" width="100%">
+		</div>
+	</div>
+	
+	<div class="_section" id="_s_2">
+		<div class="_body">
+<<<<<<< HEAD
+			<!-- Value Proposition -->
+=======
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="value.html" width="100%" style="margin-top:0%;"></iframe>
+>>>>>>> 215e069b398588bb6772850475280492552aa351
+		</div>
+	</div>
+	<div class="_section" id="_s_3">
+		<div class="_body">
+			<!-- Product Feature -->
+			<div class="_left_section">
+				<div class="_fake_top"></div>
+				<img src="assets/laptop.png" class="s3-laptop" />
+				<img src="assets/g1.png" class="s3-laptop-data" id="s3_laptop_data" />
+			</div>
+			<div class="_right_section">
+				<div class="_title_n_nav">
+					<div class="p1">
+						<img src="assets/left-arrow.png" id="section3_left" />
+					</div>
+					<div class="p2">
+						<div class="title" id="section3_title"></div>
+						<div class="data" id="section3_data"></div>
+					</div>
+					<div class="p3">
+						<img src="assets/right-arrow.png" id="section3_right" />
+					</div>
+				</div>
+				<div class="_desc"></div>
+			</div>
+		</div>
+	</div>
+	<div class="_section" id="_s_4">
+		<div class="_body">
+<<<<<<< HEAD
+			<!-- Product Feature -->
+=======
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="hijau.html" width="100%" style="margin-top:0%;"></iframe>
+>>>>>>> 215e069b398588bb6772850475280492552aa351
+		</div>
+	</div>
+	<div class="_section" id="_s_5">
+		<div class="_body">
+			<!-- Product Feature -->
+			<div class="_fake_s5"></div>
+			<div class="_container_s5">
+				<div class="kotak" id="kotak_1">
+					<div class="gbr"></div>
+					<div class="judul">
+						Market Segment<br/>&nbsp;
+					</div>
+				</div>
+
+				<div class="kotak" id="kotak_2">
+					<div class="gbr"></div>
+					<div class="judul">
+						Competitors and<br/>
+						Market Size
+					</div>
+				</div>
+
+				<div class="kotak" id="kotak_3">
+					<div class="gbr"></div>
+					<div class="judul">
+						Key Partner<br/>&nbsp;
+					</div>
+				</div>
+
+				<div class="kotak" id="kotak_4">
+					<div class="gbr"></div>
+					<div class="judul">
+						Management<br/>
+						Consultant
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="_section" id="_s_6">
+		<div class="_body">
+			<img src="img/pesawat.png" class="img-responsive" style="margin-top: 10%">
+		</div>
+	</div>
+	<div class="_section" id="_s_7">
+<<<<<<< HEAD
+		<!-- <div class="_body">
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="team.html" width="100%" style="margin-top:0%;"></iframe>
+		</div> -->
+	</div>
+	<div class="_section" id="_s_8">
+		<!-- <div class="_body">
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="office.html" width="100%" style="margin-top:0%;"></iframe>
+		</div> -->
+=======
+		<div class="_body">
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="team.html" width="100%" style="margin-top:10%;"></iframe>
+		</div>
+	</div>
+	<div class="_section" id="_s_8">
+		<div class="_body">
+			<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="office.html" width="100%" style="margin-top:10%;"></iframe>
+		</div>
+>>>>>>> 215e069b398588bb6772850475280492552aa351
+	</div>
+
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
