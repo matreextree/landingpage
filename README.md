@@ -1,6 +1,6 @@
 # BACA PENTING!
 
-Halaman utama ada di cp.html, semua framework dihapus dari halaman cp.html spt bootstrap, google map, chart, dll.
+Halaman utama ada di cp.html, semua framework dihapus dari halaman cp.html spt bootstrap, google map, chart, dll. dari data sebelumnya.
 
 ```
 	<div class="_section" id="_s_3">
