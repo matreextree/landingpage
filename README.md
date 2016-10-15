@@ -1,5 +1,7 @@
 # BACA PENTING!
 
+### NOTE: Periksa setiap bug terbaru di folder bug-ss
+
 Halaman utama ada di cp.html, semua framework dihapus dari halaman cp.html spt bootstrap, google map, chart, dll. dari data sebelumnya.
 
 ```
