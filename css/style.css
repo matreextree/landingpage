@@ -471,6 +471,7 @@ body{
 }
 
 ._left_section{
+	position: absolute;
 	height: 100%;
 }
 
@@ -494,7 +495,7 @@ body{
 }
 
 ._right_section{
-	top: calc(-100% + 30%);
+	top: 30%;
 	position: relative;
 	height: 40%;
 	margin-left: 60%;
