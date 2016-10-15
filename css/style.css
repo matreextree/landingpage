@@ -469,3 +469,150 @@ body{
 #_s_8 ._body{
 	background-color: #FFFFFF;
 }
+
+._left_section{
+	height: 100%;
+}
+
+._left_section ._fake_top{
+	height: 20%;
+}
+
+._left_section .s3-laptop{
+	height: 60%;
+	width: 45%;
+	margin-left: 10%;
+}
+
+._left_section .s3-laptop-data{
+	left: 0;
+	margin-top: 2%;
+	position: absolute;
+	height: 51%;
+	width: 38%;
+	margin-left: 13.5%;
+}
+
+._right_section{
+	top: calc(-100% + 30%);
+	position: relative;
+	height: 40%;
+	margin-left: 60%;
+	/*background-color: #999;*/
+	width: 30%; /*dikurang padding*/
+}
+
+._right_section ._title_n_nav{
+	text-align: center;
+}
+
+._right_section ._title_n_nav .p1{
+	float: left;
+}
+
+._right_section ._title_n_nav .p1 img{
+	cursor: pointer;
+	max-width: 25%;
+}
+
+._right_section ._title_n_nav .p2{
+	float: left;
+	max-width: 50%;
+	margin: 0 5%;
+}
+
+._right_section ._title_n_nav .p2 .title{
+	font-weight: bold;
+	text-align: left;
+}
+
+._right_section ._title_n_nav .p2 .data{
+	margin-top: 10%;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+._right_section ._title_n_nav .p3{
+	float: left;
+}
+
+._right_section ._title_n_nav .p3 img{
+	cursor: pointer;
+	max-width: 25%;
+}
+
+#_s_5 ._body ._fake_s5{
+	height: 30%;
+}
+
+#_s_5 ._body ._container_s5{
+	height: 40%;
+	width: 100%;
+	text-align: center;
+}
+
+#_s_5 ._body ._container_s5 .kotak{
+	height: 20vw;
+	width: 17vw;
+	margin: 0 1%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#_s_5 ._body ._container_s5 .kotak .gbr{
+	background-color: #FFFFFF;
+	height: 17vw;
+	width: 100%;
+}
+
+#_s_5 ._body ._container_s5 .kotak .judul{
+	color: #777;
+	margin-top: 5%;
+	height: 3vw;
+	width: 100%;
+}
+
+.modalku{
+	position: absolute;
+	top: 400vh;
+	left: 0;
+	padding: 15vh 15vw;
+	height: calc(100vh - 2 * 15vh);
+	width: calc(100vw - 2 * 15vw);
+	background-color: rgba(0, 0, 0, .2);
+	z-index: 10000;
+}
+
+.modalku .isi{
+	width: 70vw;
+	height: 70vh;
+	background-color: #3C3C48;
+	border-radius: 2vmin;
+	box-shadow: 0 3px 3px rgba(60, 60, 60, .5);
+}
+
+.modalku .isi .close{
+	position: relative;
+	float: right;
+	padding: 4%;
+	height: 2%;
+	color: white;
+	cursor: pointer;
+	z-index: 100000;
+}
+
+.modalku .isi .judul{
+	position: absolute;
+	float: left;
+	padding: calc(0.04 * 70vw); /* 4% dari 70vh (.modalku .isi) */
+	height: 2%;
+	color: white;
+	z-index: 100000;
+}
+
+.modalku .isi .data{
+	width: 70vw;
+	height: 70vh;
+	border-radius: 2vmin;
+	z-index: 0;
+}
