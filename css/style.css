@@ -190,9 +190,9 @@ body{
 
 
 #articleFooter1{
-	bottom: 0px;
+	bottom: 17%;
 	left: 0px;
-	height: 30%;
+	height: 35%;
 	width: 28%;
 	margin-right: 30px;
 	background-color: white;
@@ -210,9 +210,9 @@ body{
 
 #articleFooter2{
 	padding-top: 5px;
-	bottom: 0px;
+	bottom: 17%;
 	right: 0px;
-	height: 30%;
+	height: 35%;
 	width: 70%;
 	background-color: white;
 	z-index: 2;
@@ -239,7 +239,7 @@ body{
 }
 
 .bodyItemArticle2{
-	height: 80%;
+	height: 70%;
 	width: 100%;
 	border-right: solid black 1px;
 	padding-left: 20px;
