@@ -1,107 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>matreex.co</title>
-	<link href="img/icon.png" rel="shortcut icon">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	
-	
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoKltQf9weyMZdQVJX55xEIIkg3j6_EEE&sensor=false"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	
-</head>
-<body>
-	<div class="_header">
-		<div><img class="ico" src="img/icon.png"></div>
-		<div class="ico_text"><a href="index.html">matreex.co</a></div>
-		<div class="ico_hr"><hr /></div>
-		<div class="ico_desc">Automation & Integration of<br/><span></span></div>
-		<div id="the_title" class="ico_title">Our Office</div>
-	</div>
-	
-	<div class="_section" id="_s_10">
-		<div class="_fake"></div>
-		<div class="_body">
-			<section class="content">
-				<!-- Small boxes (Stat box) -->
-				<!-- <div id="map"></div> -->
-				
-				<div id="map" style="height: 400px;"></div>
+<div>
+	<section class="content">
+		<!-- Small boxes (Stat box) -->
+		<!-- <div id="map"></div> -->
+		
+		<div id="map" style="height: 400px;"></div>
 
-				<script type="text/javascript">
-					var locations = [
-					['New York', 40.6700, -73.9400, 2],
-					['Bandung', -6.914744, 107.609810, 1]
-					];
+		<script type="text/javascript">
+			var locations = [
+			['New York', 40.6700, -73.9400, 2],
+			['Bandung', -6.914744, 107.609810, 1]
+			];
 
-					var map = new google.maps.Map(document.getElementById('map'), {
-						zoom: 2,
-						<!-- center: new google.maps.LatLng(-33.92, 151.25), -->
-						center: new google.maps.LatLng(0, 0),
-						mapTypeId: google.maps.MapTypeId.ROADMAP,
-						styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
-					});
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 2,
+				<!-- center: new google.maps.LatLng(-33.92, 151.25), -->
+				center: new google.maps.LatLng(0, 0),
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
+			});
 
-					var infowindow = new google.maps.InfoWindow();
+			var infowindow = new google.maps.InfoWindow();
 
-					var marker, i;
+			var marker, i;
 
-					for (i = 0; i < locations.length; i++) {  
-						marker = new google.maps.Marker({
-							position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-							map: map
-						});
+			for (i = 0; i < locations.length; i++) {  
+				marker = new google.maps.Marker({
+					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					map: map
+				});
 
-						google.maps.event.addListener(marker, 'click', (function(marker, i) {
-							return function() {
-								infowindow.setContent(locations[i][0]);
-								infowindow.open(map, marker);
-							}
-						})(marker, i));
+				google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+						infowindow.setContent(locations[i][0]);
+						infowindow.open(map, marker);
 					}
-				</script>
-				
-			</section>
-			<div class="col-md-12">&nbsp;</div>
-			<div class="col-md-12">
-				<div class="col-md-4">
-					<div class="box to-animate">
-						In 2014, We are temporarily relocating our office from New York to Indonesia to develop our systems.<br/>
-						For further inquiries please contact as at the address below:
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="box to-animate">
-						<b>US Office</b><br/>
-						34-07, 92 Street<br/>
-						Jackson Heights, NY USA
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="box to-animate">
-						<b>Indonesia Office</b><br/>
-						Jl. Abadi Raya No. 12 Geger Kalong, Bandung<br/>
-						Indonesia
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="box to-animate">
-						<b>Email address</b><br/>
-						teukuyordan@matreex.co<br/>
-						roy@matreex.co<br/>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="box to-animate">
-						<b>Phone Number</b><br/>
-						+62-821-10791257<br/>
-						+62-812-14650851<br/>
-					</div>
-				</div>
+				})(marker, i));
+			}
+		</script>
+		
+	</section>
+	<div class="col-md-12">&nbsp;</div>
+	<div class="col-md-12">
+		<div class="col-md-4">
+			<div class="box to-animate">
+				In 2014, We are temporarily relocating our office from New York to Indonesia to develop our systems.<br/>
+				For further inquiries please contact as at the address below:
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="box to-animate">
+				<b>US Office</b><br/>
+				34-07, 92 Street<br/>
+				Jackson Heights, NY USA
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="box to-animate">
+				<b>Indonesia Office</b><br/>
+				Jl. Abadi Raya No. 12 Geger Kalong, Bandung<br/>
+				Indonesia
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="box to-animate">
+				<b>Email address</b><br/>
+				teukuyordan@matreex.co<br/>
+				roy@matreex.co<br/>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="box to-animate">
+				<b>Phone Number</b><br/>
+				+62-821-10791257<br/>
+				+62-812-14650851<br/>
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+</div>
