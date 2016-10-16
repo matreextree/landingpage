@@ -34,9 +34,9 @@ $(document).ready(function(){
 
 	var data_modal = [
 		'<img src="img/market.png" style="width: 100%; margin-top: 2%;">',
-		'',
-		'',
-		''
+		'<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="4.html" width="100%" style="margin-top:0%;"></iframe>',
+		'<iframe align="center" frameborder="no" height="100%" scrolling="auto" src="5.html" width="100%" style="margin-top:0%;"></iframe>',
+		'<img src="img/management.png" style="width: 100%; margin-top: 2%;">'
 	];
 
 	$('.kotak').click(function(){
@@ -45,13 +45,13 @@ $(document).ready(function(){
 				show_modal('Market Segment', data_modal[0]);
 				break;
 			case 2: 
-				show_modal('Competitors and Market Size', '');
+				show_modal('Competitors and Market Size', data_modal[1]);
 				break;
 			case 3: 
-				show_modal('Key Partner', '');
+				show_modal('Key Partner', data_modal[2]);
 				break;
 			case 4: 
-				show_modal('Management Consultant', '');
+				show_modal('Management Consultant', data_modal[3]);
 				break;
 			default: return;
 		}
@@ -168,37 +168,42 @@ $(document).ready(function(){
 		{
 			title: 'Economic Outlook',
 			desc: 'Horizontal centering with css is rather easy. When the element to be centered is an inline element we use text-align center on its parent. When the element is a block level element we give it a width and set the left and right margins to a value of auto.',
-			img: 'assets/g1.png'
+			img: 'img/t1.png'
 		},
 		{
 			title: 'Industry Outlook',
 			desc: 'With text-align: center in mind, most people look first to vertical-align in order to center things vertically. It seems logical and I know it was my first choice. If you’ve come from table based layout you likely used the valign attribute, which would also lead you to believe vertical-align is the way to go.',
-			img: 'assets/g2.png'
+			img: 'img/t2.png'
 		},
 		{
 			title: 'Company Profiles',
 			desc: 'However valign only worked on table cells. Vertical-align is similar. It also applies to table cells and it works with some inline elements.',
-			img: 'assets/g3.png'
+			img: 'img/t3.png'
 		},
 		{
 			title: 'Organization Roadmap',
 			desc: 'Unfortunately vertical-align doesn’t apply to block-level elements like a paragraph inside a div, which is where most of us figure out it isn’t the be all solution to vertical centering.',
-			img: 'assets/g4.png'
+			img: 'img/t4.png'
 		},
 		{
 			title: 'Consultant',
 			desc: 'All is not lost though, as we have other methods for centering block level elements and we can still use vertical-align where appropriate. Which method you choose will depend on what you’re trying to center relative to its container element.',
-			img: 'assets/g5.png'
+			img: 'img/t5.png'
 		},
 		{
 			title: 'Collaboration',
 			desc: 'This method will work when you want to vertically center a single line of text. All we need to do is set a line-height on the element containing the text larger than its font-size.',
-			img: 'assets/g6.png'
+			img: 'img/t6.png'
 		},
 		{
 			title: 'Regulation',
 			desc: 'Most tutorials will also set the height on the element with the same value given to the line-height. I don’t think setting the height is necessary, but if line-height alone doesn’t work for you setting the height of the element will likely be the solution.',
-			img: 'assets/g7.png'
+			img: 'img/t7.png'
+		},
+		{
+			title: 'University',
+			desc: 'Most tutorials will also set the height on the element with the same value given to the line-height. I don’t think setting the height is necessary, but if line-height alone doesn’t work for you setting the height of the element will likely be the solution.',
+			img: 'img/t8.png'
 		}
 	];
 
