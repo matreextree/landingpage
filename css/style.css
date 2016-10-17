@@ -48,6 +48,10 @@ body{
 	color: #FFF;
 }
 
+.black_color{
+	color: #000 !important;
+}
+
 ._header .ico_hr{
 	position: relative;
 	width: 13%;
@@ -568,7 +572,7 @@ body{
 
 #_s_5 ._body ._container_s5 .kotak .judul{
 	color: #777;
-	margin-top: 5%;
+	margin-top: -55%;
 	height: 3vw;
 	width: 100%;
 }

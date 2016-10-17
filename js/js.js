@@ -169,16 +169,44 @@ $(document).ready(function(){
 		obj.removeClass('_buble_pos_7');
 	}
 
+	function what(){
+		switch(parseInt(page_number)){
+			case 4:
+				$('.ico').attr('src', 'assets/white_tree.png');
+				break;
+				
+			case 7:
+			case 8:
+				if(!$('#icooo').hasClass('black_color'))
+					$('#icooo').addClass('black_color');
+				
+				break;
+
+			default:
+				$('.ico').attr('src', 'img/icon.png');
+				if($('#icooo').hasClass('black_color'))
+					$('#icooo').removeClass('black_color');
+		}
+	}
+
 	// transisi ke halaman berikutnya
 	function nextPage(){
 		//scroll down
-		if(page_number == 8 || !can_scroll)
+		if(page_number == 9 || !can_scroll)
 			return false;
 
 		can_scroll = false
 		$('html, body').animate({
 			scrollTop: $('#_s_' + (++page_number)).offset().top
 		}, delay);
+
+		if(page_number == 9){
+			$('._header').hide();
+			$('#_side_nav').hide();
+		}else{
+			$('._header').show();
+			$('#_side_nav').show();
+		}
 
 		if(page_number == 6){
 			temp();
@@ -195,9 +223,12 @@ $(document).ready(function(){
 			$('#the_title').html(title_of_page[page_number - 2]);
 		}else{
 			console.log('np_hide');
-			$('._header').hide();
+			// $('._header').hide();
+			$('#the_title').html('');
 			$('#_side_nav').hide();
 		}
+
+		what();
 
 		setTimeout(function() {can_scroll = true;}, delay + space_delay);
 	}
@@ -212,6 +243,14 @@ $(document).ready(function(){
 		$('html, body').animate({
 			scrollTop: $('#_s_' + (--page_number)).offset().top
 		}, delay);
+
+		if(page_number == 9){
+			$('._header').hide();
+			$('#_side_nav').hide();
+		}else{
+			$('._header').show();
+			$('#_side_nav').show();
+		}
 
 		if(page_number == 6){
 			temp();
@@ -228,9 +267,13 @@ $(document).ready(function(){
 			$('#the_title').html(title_of_page[page_number - 2]);
 		}else{
 			console.log('pp_hide');
-			$('._header').hide();
+			// $('._header').hide();
+			$('#the_title').html('');
 			$('#_side_nav').hide();
 		}
+
+
+		what();
 
 		setTimeout(function() {can_scroll = true;}, delay + space_delay);
 	}
@@ -369,5 +412,6 @@ $(document).ready(function(){
 	}, delay);
 
 	// inisialisasi: header disembunyikan pada halaman satu (1)
-	$('._header').hide();
+	$('._header').show();
+	$('#the_title').html('');
 });
