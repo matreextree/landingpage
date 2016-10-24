@@ -9,8 +9,8 @@ body{
 p{
 	font-family: sans-serif;
 	margin-top: 0px;
-	margin-bottom: 8px;
-	font-size: 12px;
+	margin-bottom: 12px;
+	font-size: 14px !ie;
 }
 
 .container{
@@ -27,18 +27,18 @@ p{
 #gearClient{
 	position: fixed;
 	width: 10%;
-	height: 15%;
+	height: 20%;
 	/*background-color: white;*/
 	background: url("../img/1.png");
-	background-size: 100px 100px;
+	background-size: 130px 130px;
 	background-repeat: no-repeat;
-	top: 23%;
-	right: 55%;
+	top: 25%;
+	right: 54%;
 }
 
 #gearClient>.quoteBox{
 	top:-90px;
-	right: 50px;
+	right: 90px;
 }
 
 
@@ -50,17 +50,17 @@ div#gearClient:hover div.quoteBox{
 /*GearGoverment*/
 #gearGoverment{
 	position: fixed;
-	width: 15%;
-	height: 25%;
+	width: 10%;
+	height: 20%;
 	background: url("../img/3.png");
-	background-size: 150px 150px;
+	background-size: 130px 130px;
 	background-repeat: no-repeat;
-	top: 23%;
-	right: 35%;
+	top: 19%;
+	right: 37%;
 }
 
 #gearGoverment>.quoteBox{
-	top:-80px;
+	top:-30px;
 	right: -150px;
 }
 
@@ -78,8 +78,8 @@ div#gearGoverment:hover div.quoteBox{
 	background: url("../img/2.png");
 	background-size: 130px 130px;
 	background-repeat: no-repeat;
-	top: 35%;
-	right: 50%;
+	top: 31%;
+	right: 45%;
 }
 
 #gearMatreex>.quoteBox{
@@ -97,12 +97,12 @@ div#gearMatreex:hover div.quoteBox{
 #gearConsultant{
 	position: fixed;
 	width: 10%;
-	height: 15%;
+	height: 20%;
 	background: url("../img/4.png");
-	background-size: 100px 100px;
+	background-size: 130px 130px;
 	background-repeat: no-repeat;
-	top: 45%;
-	right: 40%;
+	top: 43%;
+	right: 37%;
 }
 
 #gearConsultant>.quoteBox{
@@ -117,6 +117,28 @@ div#gearConsultant:hover div.quoteBox{
   	opacity: 1;
 }
 
+/*GearUniversity*/
+#gearUniversity{
+	position: fixed;
+	width: 10%;
+	height: 20%;
+	background: url("../img/5.png");
+	background-size: 130px 130px;
+	background-repeat: no-repeat;
+	top: 50%;
+	right: 48%;
+}
+
+#gearUniversity>.quoteBox{
+	bottom:-50px;
+	left: -300px;
+}
+
+
+div#gearUniversity:hover div.quoteBox{
+	visibility: visible;
+  	opacity: 1;
+}
 
 .quoteBox{
 	width: 280px;

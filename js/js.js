@@ -46,42 +46,42 @@ $(document).ready(function(){
 	var data_page_3 = [
 		{
 			title: 'Economic Outlook',
-			desc: 'Horizontal centering with css is rather easy. When the element to be centered is an inline element we use text-align center on its parent. When the element is a block level element we give it a width and set the left and right margins to a value of auto.',
+			desc: 'Prototype 1 - 18',
 			img: 'img/t1.png'
 		},
 		{
 			title: 'Industry Outlook',
-			desc: 'With text-align: center in mind, most people look first to vertical-align in order to center things vertically. It seems logical and I know it was my first choice. If you’ve come from table based layout you likely used the valign attribute, which would also lead you to believe vertical-align is the way to go.',
+			desc: 'Prototype 19 - 58',
 			img: 'img/t2.png'
 		},
 		{
-			title: 'Company Profiles',
-			desc: 'However valign only worked on table cells. Vertical-align is similar. It also applies to table cells and it works with some inline elements.',
+			title: 'Business Roadmap',
+			desc: 'Prototype 59 -136',
 			img: 'img/t3.png'
 		},
 		{
 			title: 'Organization Roadmap',
-			desc: 'Unfortunately vertical-align doesn’t apply to block-level elements like a paragraph inside a div, which is where most of us figure out it isn’t the be all solution to vertical centering.',
+			desc: 'Prototype 137 - 240',
 			img: 'img/t4.png'
 		},
 		{
 			title: 'Consultant',
-			desc: 'All is not lost though, as we have other methods for centering block level elements and we can still use vertical-align where appropriate. Which method you choose will depend on what you’re trying to center relative to its container element.',
+			desc: 'Prototype 241 - 270',
 			img: 'img/t5.png'
 		},
 		{
 			title: 'Collaboration',
-			desc: 'This method will work when you want to vertically center a single line of text. All we need to do is set a line-height on the element containing the text larger than its font-size.',
+			desc: 'Prototype 271 - 299',
 			img: 'img/t6.png'
 		},
 		{
 			title: 'Regulation',
-			desc: 'Most tutorials will also set the height on the element with the same value given to the line-height. I don’t think setting the height is necessary, but if line-height alone doesn’t work for you setting the height of the element will likely be the solution.',
+			desc: 'Prototype 300 - 336',
 			img: 'img/t7.png'
 		},
 		{
 			title: 'University',
-			desc: 'Most tutorials will also set the height on the element with the same value given to the line-height. I don’t think setting the height is necessary, but if line-height alone doesn’t work for you setting the height of the element will likely be the solution.',
+			desc: 'Prototype 337 - 348',
 			img: 'img/t8.png'
 		}
 	];
@@ -172,7 +172,16 @@ $(document).ready(function(){
 	function what(){
 		switch(parseInt(page_number)){
 			case 4:
-				$('.ico').attr('src', 'assets/white_tree.png');
+				$('.ico').attr('src', 'img/icon.png');
+				if(!$('#icooo').hasClass('black_color'))
+					$('#icooo').addClass('black_color');
+				break;
+				
+			case 5:
+				$('.ico').attr('src', 'img/icon.png');
+				if(!$('#icooo').hasClass('black_color'))
+					$('#icooo').addClass('black_color');
+				
 				break;
 				
 			case 7:
@@ -340,8 +349,14 @@ $(document).ready(function(){
 	$(document).keydown(function(e) {
 	    switch(e.which) {
 	        case 37: // left
+	        if(page_number == 2){
+	        	$("#frame2").contents().find('#tombolKiri').trigger('click');
+	        }
 	        if(page_number == 3){
 	        	$('#section3_left').trigger('click');
+	        }
+	        if(page_number == 4){
+	        	$("#frame4").contents().find('#tombolKiri').trigger('click');
 	        }
 	        break;
 
@@ -350,8 +365,14 @@ $(document).ready(function(){
 	        break;
 
 	        case 39: // right
+	        if(page_number == 2){
+	        	$("#frame2").contents().find('#tombolKanan').trigger('click');
+	        }
 	        if(page_number == 3){
 	        	$('#section3_right').trigger('click');
+	        }
+	        if(page_number == 4){
+	        	$("#frame4").contents().find('#tombolKiri').trigger('click');
 	        }
 	        break;
 

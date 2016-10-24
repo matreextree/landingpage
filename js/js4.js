@@ -1,19 +1,23 @@
 var data = [
 		{
-			title:"Eliminating consultant operational costs",
-			isi:"As company will have different problems during a course of time, different ways have been carried out to resolve the problems by engaging different services from wide-range of providers - which is not uncommon resulting in conflicting outputs that even put company in a setback"
+			title:"Product Feature",
+			isi:"The integration of Market Research, Strategy and Operation Consultancy can be found through our product features above. There are 15 value innovations that we generated from our 8 exhaustive years of research, They are:"
 		},
 		{
-			title:"Value Proposition",
-			isi:"Our solution lies in the integration and automation of all consulting services from market research, strategy and operation"
+			title:"Value Innovations",
+			isi:"1. Eliminating consultant operational costs <br/> 2. Eliminating office politics <br/> 3. Reducing service duration <br/> 4. Reducing service fee <br/> 5. Reducing human error & subjectivity"
 		},
 		{
-			title:"Trend",
-			isi:"In the next five years, large corporate clients will increasingly look for firms that offer <q>end-to-end business solutions</q> (i.e. a firm that is involved in every step of the process, from advisory to execution to assessment) - source Ibisworld.com Report 2014"
+			title:"Value Innovations",
+			isi:"6. Reducing dependency on consultant <br/> 7. Raising service coverage <br/> 8. Raising customer involvement & access <br/> 9. Raising process and results accuracy <br/> 10. Raising work flexibility & mobility"
 		},
 		{
-			title:"Cost of Research",
-			isi:"For past eight years we have spent US$ 660,000 on Research only. As of 2016 we are on the development stages."
+			title:"Value Innovations",
+			isi:"11. Creating indefinite talent pool <br/> 12. Creating collaboration <br/> 13. Creating service sustainability <br/> 14. Creating transparency <br/> 15. Creating new market for SMEs"
+		},
+		{
+			title:"Project Failure",
+			isi:"There are top three reasons for project failure from 2004 – 2014 <br/> 1. Bad estimates / missed deadlines <br/> 2. Scope Changes <br/> 3. Insufficient Resources"
 		},
 	];
 
@@ -33,7 +37,7 @@ function gantiContent(){
 
 function klikKiri(){
 	if(pos <= 0){
-		pos = 3;
+		pos = 4;
 	}else{
 		pos = pos - 1;
 	}
@@ -41,7 +45,7 @@ function klikKiri(){
 }
 
 function klikKanan(){
-	if(pos >= 3){
+	if(pos >= 4){
 		pos = 0;
 	}else{
 		pos = pos + 1;

@@ -1,0 +1,13 @@
+._left_section .s3-laptop { 
+    height: 60%; 
+    margin-left: 10%; 
+}
+
+._left_section .s3-laptop-data { 
+    left: 0; 
+    margin-top: 4%; 
+    position: absolute; 
+    height: 51%; 
+    width: 78%; 
+    margin-left: 16%; 
+}

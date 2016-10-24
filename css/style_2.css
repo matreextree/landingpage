@@ -455,8 +455,7 @@ body{
 }
 
 #_s_4 ._body{
-	/* background-color: #1DAE78; */
-	background-color: #fff;
+	background-color: #1DAE78;
 }
 
 #_s_5 ._body{
@@ -495,8 +494,7 @@ body{
 
 /*This will work for chrome */
 ._left_section .s3-laptop{
-	height: 60% !ie;
-	width:auto;
+	height: 60%;
 	width: 45%;
 	margin-left: 10%;
 }
@@ -504,7 +502,7 @@ body{
 	left: 0;
 	margin-top: 2%;
 	position: absolute;
-	height: 49%;
+	height: 51%;
 	width: 38%;
 	margin-left: 13.5%;
 }
@@ -519,6 +517,7 @@ body{
 	}
 
 	._left_section .s3-laptop-data { 
+		left: 0; 
 		margin-top: 4%; 
 		position: absolute; 
 		height: 51%; 
@@ -528,13 +527,12 @@ body{
 }
 
 /* This will work for IE */
-	/* html>body ._left_section .s3-laptop { 
+	/* ._left_section .s3-laptop { 
 		height: 60%; 
-		width:auto;
 		margin-left: 10%; 
 	}
 
-	html>body ._left_section .s3-laptop-data { 
+	._left_section .s3-laptop-data { 
 		left: 0; 
 		margin-top: 4%; 
 		position: absolute; 
