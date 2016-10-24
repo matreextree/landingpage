@@ -401,12 +401,12 @@ body{
 
 #_side_nav #_buble{
 	position: relative;
-	width: 0.7vw;
-	height: 0.7vw;
+	width: 1.5vw;
+	height: 1.5vw;
 	background-color: #EEE;
-	border-radius: 0.35vw;
+	border-radius: 0.75vw;
 	top: -100%;
-	margin-left: -0.25vw;
+	margin-left: -0.65vw;
 	/*margin-left: calc(50% - 1vw);*/
 }
 
