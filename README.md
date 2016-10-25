@@ -18,7 +18,7 @@ Navigasi halaman dilakukan dengan cara scroll mouse, arrow key (up/down), atau b
 
 live preview (cp.html):
 
-[Klik disini](https://riochr17.github.io/mtrx/cp.html "https://riochr17.github.io/mtrx/cp.html")
+[Klik disini](https://matreextree.github.io/landingpage/cp.html "https://matreextree.github.io/landingpage/cp.html")
 
 Jika ada pertanyaan langsung hubungi tim.
 
